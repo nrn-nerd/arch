@@ -245,7 +245,7 @@
         "format-ethernet": " {ipaddr}/{cidr}",
         "tooltip-format": " {ifname} via {gwaddr}",
         "format-linked": " {ifname} (No IP)",
-        "format-disconnected": "⚠ Disconnected",
+        "format-disconnected": " ----",
         "format-alt": "{ifname}: {ipaddr}/{cidr}"
     },
     "pulseaudio": {
@@ -253,7 +253,7 @@
         "format": " {format_source} {volume}% {icon}",
         "format-bluetooth": "{format_source} {volume}% {icon} ",
         "format-bluetooth-muted": " {icon} {format_source}",
-        "format-muted": "{format_source} ",
+        "format-muted": "{format_source} ",
         "format-source": "{volume}% ",
         "format-source-muted": "",
         "format-icons": {

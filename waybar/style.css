@@ -251,9 +251,9 @@ label:focus {
 }
 
 #network.disconnected {
-    color: #808080;
+    color: #cc0000;
 
-    background-color: #353535;
+    background-color: #1f1f1f;
 }
 
 #pulseaudio {
@@ -264,8 +264,8 @@ label:focus {
 }
 
 #pulseaudio.muted {
-    background-color: #90b1b1;
-    color: #2a5c45;
+    background-color: #1f1f1f;
+    color: #cc0000;
 }
 
 #wireplumber {
