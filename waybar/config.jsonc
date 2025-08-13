@@ -93,7 +93,7 @@
 
     "hyprland/workspaces": {
     "disable-scroll": true,
-    "format": "{name}",
+    "format": "{id}",
     // "on-click": "hyprctl dispatch workspace {name}",
     // "on-click": "hyprctl dispatch workspace 1",
     "all-outputs": true,
