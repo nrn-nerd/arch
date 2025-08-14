@@ -20,10 +20,6 @@
         "hyprland/mode",
         "hyprland/scratchpad",
         "custom/media",
-        "custom/workspaces-prev",
-        "hyprland/workspaces",
-        "custom/total_workspaces",
-        "custom/workspaces-next",
         "cpu"
         
     ],
@@ -35,14 +31,16 @@
         
     ],
     "modules-right": [
+        "hyprland/workspaces",
+        "custom/workspace-switcher",
+        "custom/total_workspaces",
         
-        
-        "custom/clock",
         "pulseaudio",
-        "hyprland/language",
+        // "hyprland/language",
         // "keyboard/icon",
-        "mpd",
-        "idle_inhibitor",
+        // "mpd",
+        // "idle_inhibitor",
+        "custom/clock",
         "custom/calendar",
         "tray"
 
@@ -53,19 +51,16 @@
     "custom/total_workspaces": {
         "exec": "hyprctl workspaces -j | jq 'length'",
         "interval": 1,
-        "format": "    {}   "
+        "format": "  {}    "
     },
 
-    "custom/workspaces-prev": {
-        "format": " ",
-        "on-click": "hyprctl dispatch workspace -1"
-    },
-    "custom/workspaces-next": {
-        "format": " ",
-        "on-click": "hyprctl dispatch workspace +1"
+    "custom/workspace-switcher": {
+        "format": "  ",
+        "on-click": "hyprctl dispatch workspace -1",
+        "on-click-right": "hyprctl dispatch workspace +1"
     },
     "custom/calendar": {
-    "exec": "date +'%d - %m - %Y'", 
+    "exec": "date +'%d - %m'", 
     "interval": 60,
     "format": "  {} -   ",
     "tooltip": false,
@@ -73,7 +68,7 @@
 },
 
 "custom/clock": {
-    "exec": "date +'%H : %M : %S'", 
+    "exec": "date +'%H : %M'", 
     "interval": 1,
     "format": "{} :   ",
     "tooltip": false
@@ -93,7 +88,7 @@
 
     "hyprland/workspaces": {
     "disable-scroll": true,
-    "format": "{id}",
+    "format": "  {id}",
     // "on-click": "hyprctl dispatch workspace {name}",
     // "on-click": "hyprctl dispatch workspace 1",
     "all-outputs": true,
@@ -250,7 +245,7 @@
     },
     "pulseaudio": {
         // "scroll-step": 1, // %, can be a float
-        "format": " {format_source} {volume}% {icon}",
+        "format": " {format_source} {volume}% {icon}  ",
         "format-bluetooth": "{format_source} {volume}% {icon} ",
         "format-bluetooth-muted": " {icon} {format_source}",
         "format-muted": "{format_source} ",
