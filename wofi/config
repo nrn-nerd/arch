@@ -1,1 +1,27 @@
 width=25%
+
+# position values:
+# 1 2 3
+# 8 0 4
+# 7 6 5
+POSITION=5
+
+#y-offset
+#YOFF=17
+yoffset=-67
+
+#x-offset
+#XOFF=0
+xoffset=0
+
+#fields to be displayed
+FIELDS=SSID,SECURITY,BARS
+
+location=bottom
+insensitive=1
+hide_scroll=1
+
+halign="center"
+
+
+

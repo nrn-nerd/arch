@@ -1,24 +1,63 @@
-#window {
-    background-color: #1a1a1a;
-    border: 2px solid rgb(40, 40, 40);
-    border-radius: 0;
+/*
+ * Wofi - Beautiful Dark Theme
+ */
+
+* {
+    font-family: "FontAwsome";
+    font-size: 16px;
+
+
+}
+
+window {
+    background-color: #000000;
+    /* border-radius: 10px; */
+    border-top: 1px solid rgb(50, 50, 50);
+    border-left: 1px solid rgb(50, 50, 50);
+    border-right: 1px solid rgb(50, 50, 50);
+    
 }
 
 #input {
-    background-color: #2a2a2a;
-    color: #dfdfdf;
+    margin: 10px;
+    padding: 8px;
+    background-color: #1b1b1b;
+    color: #f8f8f2;
     border: none;
-    border-radius: 0;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
 
+/* #inner-box {
+    margin: 0 10px;
+
+    border: none;
+    
+} */
+
 #entry {
-    border-left: 2px solid rgb(40, 40, 40);
-    border-right: 2px solid rgb(40, 40, 40);
-    background-color: #1a1a1a;
-    color: #dfdfdf;
-    border-radius: 0;
+    padding: 10px;
+    color: #d5d5d5;
 }
 
 #entry:selected {
     background-color: #1b1b1b;
+    color: #cacaca;
 }
+
+#text {
+    color: #c4c4c4;
+}
+
+#text:selected {
+    color: #cccccc;
+}
+/* 
+#img {
+    margin-right: 10px;
+}
+
+#input > image {
+    display: none;
+} */
+
